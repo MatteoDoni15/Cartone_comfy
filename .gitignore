@@ -1,0 +1,19 @@
+# Immagini generate da genera.py
+output/
+__pycache__/
+.ipynb_checkpoints/
+
+# Ambiente / segreti
+.venv/
+venv/
+.env
+
+# Modelli (troppo grandi per GitHub)
+*.safetensors
+*.ckpt
+
+# File di sistema / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/

@@ -1,0 +1,5 @@
+# Stile grafico comune a TUTTE le immagini del cartone (in inglese, finisce in ogni prompt).
+# Cambiatelo una volta sola all'inizio: se lo cambiate dopo, i personaggi già fatti
+# non avranno più lo stesso aspetto. Le righe con # sono commenti.
+2D children's cartoon character art for a preschool TV series: simple rounded shapes, thick clean even outlines, flat bright cheerful colors with soft cel shading, big expressive eyes, friendly cute proportions with a large head, gentle and safe look, clean vector-like finish.
+No text, no letters, no words, no logos, no watermark, no frame, no border.

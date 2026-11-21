@@ -1,0 +1,10 @@
+# Personaggio di esempio: modificatelo o cancellate la cartella.
+nome: Lumo
+descrizione: a tiny round firefly boy, plump sky-blue body, big round head with huge friendly black eyes, two thin antennae with little balls at the tips, small transparent wings, a softly glowing warm yellow tail light
+abiti: a little orange bow tie
+segni: one antenna is bent in a zigzag
+taglia: tiny, about half the height of Tina, always flying at her shoulder height
+pose: flying in a loop with his tail glowing; laughing with his hands on his belly; whispering a secret with a hand by his mouth
+seed:
+carattere: allegro, chiacchierone, un po' pasticcione, fa luce agli amici nel buio
+voce: bambino, veloce e squillante

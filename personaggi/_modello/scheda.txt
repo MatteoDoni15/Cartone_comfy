@@ -1,0 +1,32 @@
+# MODELLO DI SCHEDA PERSONAGGIO
+# Copiate questa cartella, rinominatela col nome del personaggio (es. personaggi/Bruno)
+# e compilate i campi. Le cartelle che iniziano con _ vengono ignorate.
+#
+# I campi IN INGLESE finiscono nei prompt: scriveteli precisi e NON cambiateli più
+# dopo aver scelto il personaggio, è la cosa che più lo tiene uguale tra le immagini.
+# I campi in italiano servono a voi (storia, voce) e non vanno nei prompt.
+# Ogni campo sta su UNA riga.
+
+nome: Bruno
+
+# Chi è e com'è fatto: specie, età, corporatura, testa, occhi, colori. (inglese)
+descrizione: a small chubby brown bear cub, about 5 years old, round head with small round ears, big black shiny eyes, light beige muzzle and belly
+
+# Vestiti e accessori fissi. (inglese)
+abiti: a red knitted scarf and a small blue backpack
+
+# Uno o due dettagli unici che lo rendono riconoscibile. (inglese)
+segni: a white star-shaped patch of fur on his forehead
+
+# Altezza rispetto agli altri, per l'immagine di gruppo. (inglese)
+taglia: medium height
+
+# Pose da generare, separate da ; (inglese). Lasciate vuoto per nessuna posa.
+pose: waving hello; running happily; sitting and eating honey from a jar
+
+# Seed fisso per turnaround, espressioni e pose (facoltativo, vedi README).
+seed:
+
+# --- Solo per voi, non va nei prompt ---
+carattere: goloso, generoso, un po' pigro, si spaventa del buio
+voce: bambino, voce bassa e lenta

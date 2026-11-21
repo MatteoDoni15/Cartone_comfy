@@ -1,0 +1,10 @@
+# Personaggio di esempio: modificatelo o cancellate la cartella.
+nome: Tina
+descrizione: a small young turtle girl, about 6 years old, round light-green head and arms, big brown eyes with long lashes, a rounded dark-green shell with lighter hexagon pattern
+abiti: a bright yellow raincoat with big round red buttons, small red rubber boots
+segni: a tiny white daisy flower on top of her shell
+taglia: small, the shortest of the group
+pose: waving hello; running happily in the rain; sitting and reading a big picture book
+seed:
+carattere: curiosa, un po' timida, lenta ma testarda, adora la pioggia
+voce: bambina, voce dolce e un po' acuta
