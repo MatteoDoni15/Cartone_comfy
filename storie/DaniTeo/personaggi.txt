@@ -1,0 +1,9 @@
+# Personaggi della storia, presi da workflows/DaniTeo/DaniTeo.png.
+# Formato:  Nome: descrizione in inglese (una riga).
+# Nelle scene, {Nome} viene sostituito con "Nome, <descrizione>".
+# Qui solo il corpo e il viso, che non cambiano mai: i vestiti si scrivono in ogni scena.
+# Non cambiate queste righe dopo aver iniziato: tengono i personaggi uguali tra le immagini.
+
+Teo: a slim tall young man with short textured brown hair, slightly messy on top and shorter on the sides, warm brown eyes, light stubble, fair skin, a gentle shy smile
+
+Dani: a petite young woman, a head shorter than Teo, warm light-tan skin, long wavy chestnut-brown hair with caramel highlights, big dark brown eyes with long lashes, rosy cheeks, a bright smile, tiny pearl stud earrings and a delicate thin gold necklace

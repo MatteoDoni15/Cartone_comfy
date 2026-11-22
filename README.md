@@ -112,3 +112,52 @@ affidabile è una **LoRA** per ogni personaggio, addestrata su 15-30 immagini sc
 3. **Animazione**: image-to-video dalle inquadrature (es. Wan 2.x, pochi secondi a clip;
    su T4 è lento, si lavora a bassa risoluzione).
 4. **Voci e montaggio**: sintesi vocale per i dialoghi, montaggio con ffmpeg o DaVinci.
+
+## Storie (immagini + video)
+
+Una storia è una cartella in `storie/` con `personaggi.txt`, `stile.txt`, `scene.txt`
+(un blocco per inquadratura: immagine, movimento, narrazione, battute) e `storia.md`
+(il racconto). Esempio: `storie/DaniTeo`.
+
+### Una volta sola sul PC
+```
+scoop install ffmpeg
+pip install kokoro-onnx soundfile
+```
+e in `modelli/kokoro/` i due file di Kokoro (voce italiana, offline):
+`kokoro-v1.0.onnx` e `voices-v1.0.bin` da
+https://github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0
+
+### I passi
+```
+# 1. immagini (Z-Image Turbo)
+python prepara_storia.py storie/DaniTeo
+python genera.py URL --prompt-file storie/DaniTeo/prompt_storia.txt --salta-fatte
+
+# 2. (facoltativo) copiate le immagini migliori in storie/DaniTeo/scelte/<id>.png
+
+# 3. clip animate (Wan 2.2 5B, ~4 s a clip, alcuni minuti l'una su T4)
+python prepara_storia.py storie/DaniTeo --video
+python genera.py URL --prompt-file storie/DaniTeo/prompt_video.txt --workflow-immagine workflows/wan22_5b_i2v.json --salta-fatte
+
+# 4. voce (Kokoro, sul PC)
+python voce.py storie/DaniTeo
+
+# 5. montaggio
+python monta_video.py storie/DaniTeo --musica canzone.mp3 --sottotitoli-nel-video
+```
+`monta_video.py` usa per ogni scena la clip animata se c'è, altrimenti l'immagine con
+uno zoom lento; la voce di `storie/<Storia>/voce/`; la durata segue la voce.
+Le voci dei personaggi si cambiano in `VOCI` dentro `voce.py`.
+
+### Clip in alta qualità su TPU (alternativa a ComfyUI, sperimentale)
+Il notebook `wan_tpu_kaggle.ipynb` usa la TPU gratuita di Kaggle con
+[MaxDiffusion](https://github.com/AI-Hypercomputer/maxdiffusion) e **Wan 2.2 I2V A14B** (il modello
+grande) a 1280x720, al posto del passo 3:
+```
+python prepara_storia.py storie/DaniTeo --tpu     # crea storie/DaniTeo/kaggle_tpu/
+```
+1. caricate il contenuto di `kaggle_tpu/` come dataset Kaggle;
+2. aprite `wan_tpu_kaggle.ipynb` su Kaggle con Accelerator **TPU**, Internet **On** e il dataset come input;
+3. prima `PROVA = True` (una scena), poi `PROVA = False` con *Save & Run All (Commit)*;
+4. estraete `clip_tpu.zip` in `output/DaniTeo_video/` e rifate il passo 5.

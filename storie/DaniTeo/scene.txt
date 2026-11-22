@@ -1,0 +1,146 @@
+# Scene della storia: un blocco per inquadratura, nell'ordine del cartone.
+#
+#   [id]          nome della scena; i file escono in output/DaniTeo/<id>_...png
+#   immagine:     cosa si vede (inglese, una riga). {Teo} e {Dani} diventano la loro
+#                 descrizione da personaggi.txt; i vestiti vanno scritti qui.
+#   movimento:    cosa succede nella clip animata (inglese, una riga), per il video.
+#   narrazione:   testo dei sottotitoli (italiano). Se non ci sono righe "parla:",
+#                 è anche il testo letto dalla voce narrante.
+#   parla:        Personaggio | battuta  -> letta con la voce del personaggio (voci in voce.py).
+#                 Si può ripetere; se c'è, sostituisce la voce narrante in quella scena.
+#   scritta:      testo da disegnare DENTRO l'immagine (facoltativo; senza, niente scritte).
+#   formato:      LxA, facoltativo (default 1536x864 = 16:9, quello del video).
+#   seed:         facoltativo, per rifare sempre la stessa immagine.
+#
+# Dopo ogni modifica: python prepara_storia.py storie/DaniTeo
+
+# ---------- Capitolo 1: la biblioteca (autunno, anni dell'università) ----------
+
+[01_biblioteca]
+immagine: Wide shot of a quiet old library with tall wooden bookshelves and big arched windows, warm autumn afternoon light. {Teo}, wearing a grey hoodie over a white t-shirt and jeans, sits alone at a long wooden table by the window, studying among open books
+movimento: Teo turns a page of his book and smiles to himself, autumn leaves drift past the window, slow gentle camera push-in
+narrazione: Teo andava in biblioteca tutti i giorni. Diceva per studiare.
+
+[02_stesso_libro]
+immagine: Close-up between two tall library bookshelves: two hands reaching for the same green hardcover book on the shelf at the same moment, fingertips almost touching. On the left {Teo}, wearing a grey hoodie; on the right {Dani}, with her hair loose, wearing a mustard-yellow knit sweater. Both surprised
+movimento: their fingertips touch on the green book, both pull their hands back in surprise, look at each other and smile shyly
+narrazione: Finché un giorno, per lo stesso libro, arrivò anche lei.
+
+[03_prima_tu]
+immagine: Medium shot in a library aisle, autumn light. {Teo}, wearing a grey hoodie and jeans, shyly offers a green hardcover book to {Dani}, who wears a mustard-yellow knit sweater and jeans with her hair loose, holding books to her chest and smiling, blushing. They look at each other for the first time
+movimento: Teo holds out the green book, Dani takes it with a shy smile and blushes, they look into each other's eyes
+narrazione: «Prima tu. Io... lo aspetto.» «Allora te lo riporto domani.»
+parla: Teo | Prima tu. Io... lo aspetto.
+parla: Dani | Allora te lo riporto domani.
+
+[04_bigliettini]
+immagine: {Teo} in a grey hoodie and {Dani} in a mustard-yellow knit sweater sit across from each other at a library table full of books and a desk lamp. He secretly slides a small folded paper note toward her between the books, she covers her mouth to laugh quietly. Cozy warm light
+movimento: Teo slides the folded note across the table, Dani unfolds it and laughs softly, covering her mouth with her hand
+narrazione: Il giorno dopo lo riportò. E il giorno dopo ancora. Il libro, ormai, era una scusa.
+
+[05_caffe]
+immagine: University corridor next to a coffee vending machine. {Teo} in a grey hoodie and {Dani} in a mustard-yellow knit sweater hold small paper coffee cups and laugh together, leaning on the wall, backpacks on the floor
+movimento: they sip their coffee and laugh together, Dani playfully nudges Teo's shoulder
+narrazione: Le pause diventarono più lunghe dello studio.
+
+# ---------- Capitolo 2: il cuore spezzato ----------
+
+[06_panchina]
+immagine: A park bench in late autumn, orange leaves falling, grey sky. {Dani}, wearing a beige trench coat, sits looking down sadly at her hands. {Teo}, wearing a dark green jacket, sits next to her, looking at her confused and hurt, holding a single red rose
+movimento: Dani looks down and speaks softly, sad; Teo's smile slowly fades and he lowers the rose, autumn leaves falling
+narrazione: «Teo... non è il momento giusto. Non per me.»
+parla: Dani | Teo... non è il momento giusto. Non per me.
+
+[07_lei_se_ne_va]
+immagine: Wide melancholic full shot of a rainy autumn park, light rain, wet path with fallen orange leaves. In the foreground on the right {Teo}, wearing a dark green jacket, sits alone on a wet park bench, head down, holding a single red rose. Far away in the background, small in the distance, a young woman in a beige trench coat with long wavy brown hair is seen from behind walking away along the path. Only these two people in the whole picture, the woman appears only once, far away
+movimento: Dani slowly walks away into the distance in the rain, Teo stays seated and looks down at the rose, raindrops falling
+narrazione: Certe volte due persone giuste si incontrano nel momento sbagliato.
+
+[08_cassetto]
+immagine: A small bedroom at night lit by a desk lamp. {Teo}, wearing a dark t-shirt, sad, places a green hardcover book with a dried red rose on top into an open desk drawer
+movimento: Teo slowly puts the book with the dried rose into the drawer and closes it, then lowers his head with a sigh
+narrazione: Teo chiuse il libro. E anche il cassetto.
+
+# ---------- Capitolo 3: dopo il Covid ----------
+
+[09_lockdown_teo]
+immagine: {Teo}, wearing a comfy navy sweater, stands alone at the window of his apartment looking at an empty silent city street during lockdown. On the windowsill a child's drawing of a rainbow. Soft lonely blue light
+movimento: Teo stares out of the window at the empty street and breathes slowly, a bird flies across the sky
+narrazione: Poi il mondo intero si fermò. Ognuno a casa sua, ognuno con i suoi pensieri.
+
+[10_lockdown_dani]
+immagine: {Dani}, wearing a cozy oversized cream sweater, her hair in a messy bun, sits at her window holding a warm mug with both hands, looking thoughtfully at the sunset sky over the rooftops of the city
+movimento: Dani sips from her mug and gazes at the sunset, a light breeze moves her hair, clouds slowly drifting
+narrazione: E dall'altra parte della città, qualcuno pensava la stessa cosa.
+
+[11_messaggio]
+immagine: Evening in a dim living room. {Teo}, wearing a navy sweater, sits on the sofa looking at the glowing screen of his smartphone, his face lit by the screen, a surprised hopeful smile appearing
+movimento: the phone screen lights up, Teo reads the message, his eyes widen and a hopeful smile slowly appears
+narrazione: Un messaggio, dopo tanto tempo: «Ti ricordi del libro verde?»
+
+[12_biblioteca_riapre]
+immagine: The same old library with tall wooden bookshelves, now reopened, bright spring light. {Teo}, in a navy sweater, and {Dani}, in a light denim jacket over a white t-shirt, meet again in front of the same bookshelf, both wearing light blue surgical face masks, eyes smiling. She holds out the green hardcover book to him
+movimento: Dani hands the green book to Teo, their eyes smile above the masks, he gently takes the book
+narrazione: «Credo di dovertelo riportare.» «Con un po' di ritardo.»
+parla: Dani | Credo di dovertelo riportare.
+parla: Teo | Con un po' di ritardo.
+
+[13_abbraccio]
+immagine: Outside the library on a sunny spring day with blooming trees and petals in the air. {Teo}, in a navy sweater, and {Dani}, in a light denim jacket, hug each other tightly with eyes closed and happy smiles, face masks pulled down under their chins
+movimento: they hug each other tightly and sway slightly, cherry blossom petals drifting in the wind
+narrazione: Ci sono abbracci che aspettano anni. Questo ne valeva ognuno.
+
+# ---------- Capitolo 4: il matrimonio (qualche anno dopo) ----------
+
+[14_proposta]
+immagine: Full body shot between the tall wooden bookshelves of the old library, golden light. {Dani}, wearing a soft green dress, stands and covers her mouth with both hands, eyes full of happy tears. In front of her {Teo}, wearing a white shirt and a navy blazer, is down on one knee on the floor, looking up at her, holding up an open green hardcover book with a diamond ring resting on the pages. Classic marriage proposal pose
+movimento: Dani gasps with joy, covers her mouth with tears in her eyes and nods yes, Teo smiles widely
+narrazione: «L'ultima pagina la scriviamo insieme?»
+parla: Teo | L'ultima pagina la scriviamo insieme?
+
+[15_sguardo]
+immagine: Wedding day. {Teo}, wearing a navy blue three-piece suit with a white shirt and white bow tie and black shoes, stands holding a red rose hidden behind his back, smiling softly. {Dani}, wearing a white strapless A-line wedding gown and a long sheer veil, her hair in a low bun with loose curls, looks up at him, smiling. They gaze into each other's eyes. Soft garden background with flowers
+movimento: they gaze at each other and smile, the veil moves gently in the breeze, flower petals floating in the air
+narrazione: E qualche anno dopo, di nuovo uno di fronte all'altra. Ma questa volta nessuno dei due se ne andò.
+
+[16_si]
+immagine: Outdoor wedding ceremony under an arch of white and pink flowers, guests' chairs blurred in the background, sunny day. {Teo}, in a navy blue three-piece suit with white bow tie, gently slides a ring onto the finger of {Dani}, who wears a white strapless wedding gown and a long veil, hair in a low bun. Both smiling, emotional
+movimento: Teo slides the ring onto Dani's finger, she smiles with happy tears, flower petals gently falling
+narrazione: «Sì.»
+parla: Dani | Sì.
+parla: Teo | Sì.
+
+[17_primo_ballo]
+immagine: Wedding party at night in a garden decorated with strings of warm fairy lights. {Teo}, in a navy blue suit, twirls {Dani} in her white strapless wedding gown during their first dance, her dress flowing, both laughing
+movimento: Teo twirls Dani gracefully, her white dress swirls, the fairy lights twinkle
+narrazione: Il primo ballo. Il primo di tantissimi.
+
+# ---------- Capitolo 5: aspettando qualcuno ----------
+
+[18_notizia]
+immagine: A bright cozy kitchen in the morning. {Dani}, wearing pajamas, shows a pregnancy test to {Teo}, wearing a white t-shirt, who stares in shock with his mouth open and happy tears in his eyes, a coffee cup in his other hand
+movimento: Teo looks at the pregnancy test, his mouth opens in shock, then he laughs and hugs Dani
+narrazione: «Teo... saremo in tre.»
+parla: Dani | Teo... saremo in tre.
+
+[19_ecografia]
+immagine: A doctor's office with soft light. {Dani}, wearing a light blue blouse, lies on an examination bed, and {Teo}, wearing a grey sweater, sits beside her holding her hand. Both look with wonder at an ultrasound monitor showing a tiny baby silhouette
+movimento: they squeeze each other's hands and look at the monitor in awe, the tiny baby on the screen moves slightly
+narrazione: Un cuoricino minuscolo, che batteva fortissimo.
+
+[20_cameretta]
+immagine: A nursery room being prepared, a wooden crib, paint buckets on the floor. {Teo}, wearing paint-stained overalls, paints the wall a soft sage green with a roller. {Dani}, visibly pregnant with a round belly, wearing a loose white dress, places a green hardcover book on a little wall shelf, smiling
+movimento: Teo rolls paint on the wall, Dani places the green book on the shelf and touches her belly, smiling
+narrazione: Il libro verde trovò finalmente il suo posto.
+
+[21_divano]
+immagine: Cozy living room in the evening, warm lamp light. {Dani}, about seven months pregnant with a big round pregnant belly clearly visible, wearing a cozy cream sweater stretched over her belly, sits on the sofa laughing. {Teo}, wearing a grey t-shirt, kneels on the floor beside the sofa with his head turned sideways and his ear pressed against her big round belly, eyes wide with surprise and joy
+movimento: Teo presses his ear to Dani's belly, suddenly his eyes widen with surprise and joy, Dani laughs
+narrazione: «Ha scalciato!»
+parla: Teo | Ha scalciato!
+
+[22_continua]
+immagine: View from behind of {Teo} and {Dani} standing at the big window of a finished nursery with a crib, looking at a pink and orange sunset. He wraps his arms around her from behind, his hands resting on her round pregnant belly, her head leaning on his shoulder
+movimento: they sway gently together watching the sunset, the warm light slowly fading, peaceful
+scritta: To be continued...
+narrazione: E questa, in realtà, è solo la prima pagina.

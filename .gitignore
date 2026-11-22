@@ -17,3 +17,10 @@ Thumbs.db
 desktop.ini
 .DS_Store
 .vscode/
+
+# Video montati da monta_video.py
+storie/*/*.mp4
+storie/*/kaggle_tpu/
+
+# Modelli scaricati sul PC (Kokoro)
+modelli/
